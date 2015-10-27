@@ -26,6 +26,6 @@
 		"source": "https://github.com/kamisama/php-resque-ex-scheduler"
 	},
 	"require": {
-		"kamisama/php-resque-ex": ">=1.2.1"
+		"kamisama/php-resque-ex": "dev-laravel"
 	}
 }
