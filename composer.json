@@ -34,5 +34,6 @@
     ],
 	"require": {
 		"kamisama/php-resque-ex": "dev-laravel"
-	}
+	},
+     "minimum-stability": "dev"
 }
