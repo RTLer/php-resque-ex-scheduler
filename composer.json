@@ -16,8 +16,8 @@
 		}
 	],
 	"autoload": {
-		"psr-0": {
-			"ResqueScheduler": "lib"
+		"psr-4": {
+			"ResqueScheduler\\": "lib\\ResqueScheduler"
 		}
 	},
 	"support": {
@@ -25,7 +25,14 @@
 		"issues": "https://github.com/kamisama/php-resque-ex-scheduler/issues",
 		"source": "https://github.com/kamisama/php-resque-ex-scheduler"
 	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/RTLer/php-resque-ex"
+		}
+	],
 	"require": {
-		"kamisama/php-resque-ex": ">=1.2.1"
+		"kamisama/php-resque-ex": "dev-master"
+
 	}
 }
