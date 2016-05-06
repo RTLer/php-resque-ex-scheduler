@@ -11,7 +11,11 @@
 
 namespace ResqueScheduler;
 
-class Worker extends \Resque_Worker
+use DateTime;
+use PhpResque\Resque\Event;
+use PhpResque\Resque\Worker as ResqueWorker;
+
+class Worker extends ResqueWorker
 {
 
     /**
@@ -93,7 +97,7 @@ class Worker extends \Resque_Worker
                 ),
                 self::LOG_TYPE_INFO
             );
-            \Resque_Event::trigger(
+            Event::trigger(
                 'beforeDelayedEnqueue',
                 array(
                     'queue' => $item['queue'],

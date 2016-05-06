@@ -10,7 +10,9 @@
  */
 namespace ResqueScheduler;
 
-class Stat extends \Resque_Stat
+use PhpResque\Resque\Stat as ResqueStat;
+
+class Stat extends ResqueStat
 {
     const KEYNAME = 'schdlr';
 

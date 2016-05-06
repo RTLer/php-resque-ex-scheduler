@@ -10,7 +10,9 @@
  */
 namespace ResqueScheduler\Job;
 
-class Status extends \Resque_Job_Status
+use PhpResque\Resque\Job\Status as ResqueStatus;
+
+class Status extends ResqueStatus
 {
     const STATUS_SCHEDULED = 63;
 }
