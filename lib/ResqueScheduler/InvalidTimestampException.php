@@ -9,6 +9,8 @@
 */
 namespace ResqueScheduler;
 
-class InvalidTimestampException extends Resque_Exception
+use Exception;
+
+class InvalidTimestampException extends Exception
 {
 }
